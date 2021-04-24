@@ -112,4 +112,4 @@ loop.run_until_complete( listDevices() )
 #* loop.run_until_complete( function_name() )
 
 #! For some reason logging doesnt work in async functions or something idk because this is my first time using async functions
-#TODO Make async functions work
+#TODO Make async functions work with logging
