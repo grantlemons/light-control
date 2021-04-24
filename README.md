@@ -9,4 +9,5 @@ To get it working, go into [LightControl.py](./LightControl.py), and run the pro
 This will give an output of all devices and their states. Find your desired device and add it to your [.env file](./.env) as the value for `DEVICE_NAME`.
 
 Comment the line `loop.run_until_complete( listDevices() )` and uncomment the line `#weirdRandomLights(my_lights_object, device_name)`
+
 Run the program again and it should turn on and off the device specified in a semi-random manner.
