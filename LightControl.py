@@ -7,10 +7,11 @@ from time import sleep
 from Light import Light
 from dotenv import load_dotenv
 
+load_dotenv()
 token = os.getenv('TOKEN')
 device_name = os.getenv('DEVICE_NAME')
 loop = asyncio.get_event_loop()
-my_lights_object = Light()
+lights_object = Light()
 
 async def lightsOn(object, name):
     async with aiohttp.ClientSession() as session:
@@ -104,9 +105,9 @@ def weirdRandomLights(object, name, low_num = 0, high_num = 60):
             exit()
 
 #* How to find device names
-loop.run_until_complete( listDevices() )
+loop.run_until_complete( lightsOn(lights_object, device_name) )
 
-#weirdRandomLights(my_lights_object, device_name)
+#weirdRandomLights(lights_object, device_name)
 
 #* syntax to run async function
 #* loop.run_until_complete( function_name() )
