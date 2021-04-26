@@ -105,7 +105,7 @@ def weirdRandomLights(object, name, low_num = 0, high_num = 60):
             exit()
 
 #* How to find device names
-loop.run_until_complete( lightsOn(lights_object, device_name) )
+loop.run_until_complete( listDevices() )
 
 #weirdRandomLights(lights_object, device_name)
 
