@@ -2,7 +2,7 @@
 
 In order to use it, the first thing one needs to do is [get a smartthings personal access token](https://account.smartthings.com/tokens).
 Secondly, one must copy the [.env.example](./.env.example) file into a [.env file](./.env).
-Copy this token and put it in your .env file (example can be found [here](./.env.example).)
+Copy your token and put it in your .env file (example can be found [here](./.env.example).)
 
 # Run it
 To get it working, go into [LightControl.py](./LightControl.py), and run the program.
