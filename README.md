@@ -4,7 +4,7 @@ In order to use it, the first thing one needs to do is [get a smartthings person
 Secondly, one must copy the [.env.example](./.env.example) file into a [.env file](./.env).
 Copy your token and put it in your .env file (example can be found [here](./.env.example).)
 
-# Run it
+## Running it
 To get it working, go into [LightControl.py](./LightControl.py), and run the program.
 This will give an output of all devices and their states. Find your desired device and add it to your [.env file](./.env) as the value for `DEVICE_NAME`.
 
